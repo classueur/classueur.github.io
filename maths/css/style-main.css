@@ -284,29 +284,20 @@ td.progd
 {background-color:#007ba5;
 color:white;}
 
+
 table.main
-{border-collapse:collapse;
-margin-top:1px;
-margin-bottom:1px;
-margin-left:1px;
-table-layout:fixed;
-font-family:"Arial";
-font-size:9pt;
+{border-collapse:separate; 
+border-spacing:6px;
+margin-top:5px;
+margin-bottom:5px;
+margin-left:0px;
+padding: 6px    
+font-family:Arial, Helvetica, sans-serif;
+font-size:10pt;
 color:black;}
 
-td.main
-{padding: 5pxtable.main
-  {border-collapse:separate; 
-  border-spacing:6px;
-  margin-top:5px;
-  margin-bottom:5px;
-  margin-left:0px;
-  padding: 6px    
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:10pt;
-  color:black;
-}
 tr.main:nth-child(odd) {background-color: #ECECEC;}
+
 
 
 
