@@ -154,6 +154,23 @@ Denn genau darum geht es: Die eigenen Grenzen immer wieder zu verschieben. W&aum
         </button>
       </p>
     </form>
+
+    <script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm(
+    "service_slz0bm5",   // from EmailJS
+    "template_9c5lcih",  // from EmailJS
+    this
+  )
+  .then(function() {
+    alert("Message sent successfully!");
+  }, function(error) {
+    alert("Failed to send message: " + error.text);
+  });
+});
+</script>
   <!-- End Contact Section --> 
   
  <!-- Footer -->
