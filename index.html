@@ -19,6 +19,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("NTKk1QP3D8yxttwLc"); // from EmailJS dashboard
+  })();
+</script>  
 </head>
 
 <!---------------- BODY -------------------------->
@@ -135,7 +142,7 @@ Denn genau darum geht es: Die eigenen Grenzen immer wieder zu verschieben. W&aum
     <hr style="width:200px" class="w3-opacity">
     <p>Send me a message: under construction</p>
 
-    <form action="/Dateien/action_page.php" method="POST" target="_blank">
+    <form id="contact-form">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
